@@ -11,6 +11,7 @@
     "react-leaflet": "^2.0.1",
     "react-scripts": "1.1.5"
   },
+  "homepage": "https://luke-codewalker.github.io/kleiderspenden",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
