@@ -127,7 +127,7 @@ class App extends Component {
   }
 
   showIntroAgain() {
-    this.setState({ visitedBefore: false });
+    this.setState({ visitedBefore: false, introStep: 0 });
     localStorage.removeItem("visitedBefore");
   }
 
