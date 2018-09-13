@@ -1,0 +1,14 @@
+.InfoButton {
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+}

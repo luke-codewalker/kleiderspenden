@@ -1,0 +1,18 @@
+.PlaceInput {
+  width: 100%;
+  grid-area: place;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.PlaceInput__input {
+  font-size: 1.2rem;
+  font-family: inherit;
+  max-width: 50%;
+  margin-left: 0.5rem;
+}

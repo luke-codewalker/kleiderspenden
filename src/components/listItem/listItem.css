@@ -1,0 +1,40 @@
+.ListItem {
+  cursor: pointer;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #fff;
+
+  padding: 0.5rem 1rem;
+  margin: 0 0 2rem 0;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+.ListItem.focussed {
+  color: #000;
+  border-color: #333;
+  box-shadow: 6px 10px 8px rgba(0, 0, 0, 0.25);
+  transform: translate(-4px, -8px);
+}
+
+.ListItem__title::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+}
+
+.ListItem__title.charity::before {
+  background: center/contain no-repeat
+    url("https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png");
+}
+
+.ListItem__title.recycling::before {
+  background: center/contain no-repeat
+    url("https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png");
+}
+
+.ListItem__title.container::before {
+  background: center/contain no-repeat
+    url("https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png");
+}

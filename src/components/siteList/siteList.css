@@ -1,0 +1,10 @@
+.SiteList {
+  grid-area: list;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  overflow-y: scroll;
+}
+
+.SiteList:empty::before {
+  content: "Keine Ergebnisse";
+}

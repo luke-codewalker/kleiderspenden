@@ -1,0 +1,51 @@
+.CategorySelect {
+  grid-area: category;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.CategorySelect__item {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  margin: 0 1rem;
+}
+
+.CategorySelect__input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.CategorySelect__input:checked + .CategorySelect__label {
+  color: white;
+  border-color: transparent;
+}
+
+.CategorySelect__input:checked + .CategorySelect__label.charity {
+  background-color: #20ab1c;
+}
+
+.CategorySelect__input:checked + .CategorySelect__label.recycling {
+  background-color: #c98123;
+}
+
+.CategorySelect__input:checked + .CategorySelect__label.container {
+  background-color: #cb293c;
+}
+
+.CategorySelect__label {
+  padding: 0.25rem 0.5rem;
+  background-color: #666;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  color: #aaa;
+  transition: all 0.5s;
+}

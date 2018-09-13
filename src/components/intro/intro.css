@@ -1,0 +1,89 @@
+.Intro__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Intro__content.step1 {
+  grid-column-start: span;
+  grid-column-end: list;
+  grid-row-start: map;
+}
+
+.Intro__content.step2 {
+  grid-area: map;
+}
+
+.Intro__content.step3 {
+  grid-area: list;
+}
+
+.Intro__content__closeBtn {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #cb293c;
+}
+
+.Intro__content__prevBtn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #666;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.Intro__content__extraCloseBtn {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.25rem 1rem;
+
+  color: #fff;
+  background-color: #cb293c;
+  border-radius: 5px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.Intro__content__nextBtn {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.25rem 1rem;
+  color: #fff;
+  background-color: #20ab1c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Intro__content_note {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.Intro__content__text {
+  font-size: 1.2rem;
+  max-width: 720px;
+  text-align: center;
+  margin: 0 1.5rem 1rem 1.5rem;
+}
