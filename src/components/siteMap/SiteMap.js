@@ -52,7 +52,12 @@ class SiteMap extends Component {
                 uid={site.uid}
                 category={site.category.name}
                 position={[lat, lon]}
-                popupValue={site.name}
+                popupValue={{
+                  name: site.name,
+                  location: site.location,
+                  url: site.details.url,
+                  category: site.category.name
+                }}
                 selected={this.props.focusElement === site.uid}
                 clickHandler={this.props.markerClickHandler}
               />

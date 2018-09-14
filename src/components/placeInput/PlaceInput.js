@@ -15,6 +15,7 @@ class PlaceInput extends Component {
           value={this.props.place}
           onChange={e => this.props.handleChange({ place: e.target.value })}
           title="Hier Stadtteil oder Veedel eingeben"
+          placeholder="Stadtteil oder Veedel"
         />
       </form>
     );

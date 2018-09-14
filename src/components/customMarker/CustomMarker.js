@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Marker } from "react-leaflet";
+import CustomPopup from "../customPopup/CustomPopup";
 import L from "leaflet";
 
 const customIcon = L.Icon.extend({
@@ -37,7 +38,11 @@ class CustomMarker extends Component {
   componentDidUpdate() {
     if (this.props.selected) {
       this.ref.current.leafletElement
-        .bindPopup(this.props.popupValue)
+        .bindPopup(
+          CustomPopup({
+          ...this.props.popupValue
+          })
+        )
         .openPopup();
     }
   }

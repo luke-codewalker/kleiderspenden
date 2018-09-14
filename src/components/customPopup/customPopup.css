@@ -1,0 +1,24 @@
+a.CustomPopup__route {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #58f;
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+a.CustomPopup__route:visited {
+  color: #fff;
+}
+
+.CustomPopup__options {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}

@@ -100,7 +100,8 @@ class App extends Component {
 
     fetch(url)
       .then(res => res.json())
-      .then(data => this.setState({ sites: data }));
+      .then(data => this.setState({ sites: data }))
+      .catch(err => console.log(err));
   }
 
   handleMapClick(e) {
