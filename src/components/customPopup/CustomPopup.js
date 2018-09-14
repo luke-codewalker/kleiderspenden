@@ -2,7 +2,6 @@ import "./customPopup.css";
 
 const CustomPopup = props => {
   let gmapsDestination = "";
-  console.log(props.category);
 
   if (props.category === "container") {
     gmapsDestination = [

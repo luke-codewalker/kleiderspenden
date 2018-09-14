@@ -36,7 +36,7 @@ class SiteMap extends Component {
           center={center}
           zoom={13}
           onClick={this.props.mapClickHandler}
-          doubleClickZoom="false"
+          doubleClickZoom={false}
         >
           {" "}
           <TileLayer
