@@ -112,6 +112,10 @@ class App extends Component {
     this.setState({ currentlySelectedId: id });
   }
 
+  handlePopupClose(e) {
+    this.setState({ currentlySelectedId: "" });
+  }
+
   handleListClick(e, id) {
     this.setState({ currentlySelectedId: id });
   }
@@ -182,6 +186,7 @@ class App extends Component {
             search={this.state.search}
             mapClickHandler={this.handleMapClick.bind(this)}
             markerClickHandler={this.handleMarkerClick.bind(this)}
+            handlePopupClose={this.handlePopupClose.bind(this)}
             handleChange={this.updateSearch.bind(this)}
             focusElement={this.state.currentlySelectedId}
             blur={!this.state.visitedBefore && this.state.introStep < 3}

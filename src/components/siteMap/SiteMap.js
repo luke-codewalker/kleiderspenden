@@ -60,6 +60,7 @@ class SiteMap extends Component {
                 }}
                 selected={this.props.focusElement === site.uid}
                 clickHandler={this.props.markerClickHandler}
+                handlePopupClose={this.props.handlePopupClose}
               />
             );
           })}

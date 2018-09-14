@@ -40,7 +40,7 @@ class CustomMarker extends Component {
       this.ref.current.leafletElement
         .bindPopup(
           CustomPopup({
-          ...this.props.popupValue
+            ...this.props.popupValue
           })
         )
         .openPopup();
@@ -60,6 +60,7 @@ class CustomMarker extends Component {
         }
         position={this.props.position}
         onClick={e => this.props.clickHandler(e, this.props.uid)}
+        onPopupClose={e => this.props.handlePopupClose()}
       />
     );
   }
