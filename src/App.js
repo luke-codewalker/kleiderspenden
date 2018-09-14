@@ -8,7 +8,7 @@ import InfoButton from "./components/infoButton/InfoButton";
 
 import { Helmet } from "react-helmet";
 import "./App.css";
-import { PLACE, MAP } from "./globals";
+import { PLACE, MAP, API_ROOT } from "./globals";
 
 class App extends Component {
   constructor() {
@@ -96,9 +96,7 @@ class App extends Component {
       query.push(`category=${checkedCategories.map(x => x.name).join(",")}`);
     }
 
-    const url = `http://localhost:5000/api/sites${
-      query.length > 0 ? "?" + query.join("&") : ""
-    }`;
+    const url = `${API_ROOT}${query.length > 0 ? "?" + query.join("&") : ""}`;
 
     fetch(url)
       .then(res => res.json())

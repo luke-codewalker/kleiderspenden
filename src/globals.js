@@ -1,4 +1,4 @@
 const PLACE = "place";
 const MAP = "map";
-
-export { PLACE, MAP };
+const API_ROOT = "https://kleiderspenden-api.herokuapp.com/api/sites";
+export { PLACE, MAP, API_ROOT };
