@@ -1,4 +1,4 @@
-# kleiderspeden App
+# kleiderspenden App
 
 An app to look for places in Cologne, Germany where you can donate old clothes. Shows Charities, Recycling facilities and Containers from different organizations. Take a look at it [here](https://luke-codewalker.github.io/kleiderspenden/).
 
@@ -12,6 +12,7 @@ Open Source Data used by this app provided by [AWB Koeln](https://www.awbkoeln.d
 ## To Do list
 
 - [x] get app up and running
+- [ ] add favicon
 - [ ] add about page with link to this repo
 - [ ] add footer with link to github profile
 - [ ] create mobile layout
