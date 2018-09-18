@@ -12,6 +12,7 @@ Open Source Data used by this app provided by [AWB Koeln](https://www.awbkoeln.d
 ## To Do list
 
 - [x] get app up and running
+- [ ] dynamically load api url depending on dev vs prod env
 - [ ] add favicon
 - [ ] add about page with link to this repo
 - [ ] add footer with link to github profile
