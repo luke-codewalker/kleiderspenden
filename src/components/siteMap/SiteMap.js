@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Map, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
+import { Map, TileLayer, Marker, Popup, Tooltip, Circle } from "react-leaflet";
 import CustomMarker from "../customMarker/CustomMarker";
 import "./siteMap.css";
 import { MAP } from "../../globals";
@@ -90,6 +90,10 @@ class SiteMap extends Component {
                 />{" "}
                 km
               </Popup>
+              <Circle
+                center={this.props.search.coords}
+                radius={this.props.search.radius * 1000}
+              />
             </Marker>
           ) : null}
         </Map>

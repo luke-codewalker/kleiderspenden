@@ -20,7 +20,7 @@ Open Source Data used by this app provided by [AWB Koeln](https://www.awbkoeln.d
 - [ ] create mobile layout
 - [ ] add option to send add/update/edit suggestions
 - [x] add loading spinner to result list
-- [ ] add circle showing radius to map
+- [x] add circle showing radius to map
 
 ## Technical details
 
