@@ -10,6 +10,14 @@ class SiteList extends Component {
           this.props.loading ? "loading" : ""
         }`}
       >
+        {this.props.sites.length === 0 && (
+          <p className="SiteList__exception">
+            Keine Ergebnisse{" "}
+            <span role="img" aria-label="emoji">
+              &#x1F61E;
+            </span>
+          </p>
+        )}
         {this.props.sites.map(site => (
           <ListItem
             key={site.uid}
