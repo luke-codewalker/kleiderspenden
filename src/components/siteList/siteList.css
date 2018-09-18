@@ -5,6 +5,7 @@
   overflow-y: scroll;
 }
 
-.SiteList:empty::before {
-  content: "Keine Ergebnisse";
+.SiteList__footer {
+  text-align: center;
+  margin-bottom: 1rem;
 }

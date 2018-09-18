@@ -14,6 +14,20 @@ class SiteList extends Component {
             focussed={this.props.focusElement === site.uid}
           />
         ))}
+        <p className="SiteList__footer">
+          Made with{" "}
+          <span role="img" aria-label="emoji">
+            &#x1F49A;
+          </span>{" "}
+          in 2018 by{" "}
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/luke-codewalker"
+          >
+            Lukas Eschstruth
+          </a>
+        </p>
       </div>
     );
   }
