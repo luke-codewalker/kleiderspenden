@@ -5,7 +5,11 @@ import "./siteList.css";
 class SiteList extends Component {
   render() {
     return (
-      <div className={this.props.blur ? "SiteList blur" : "SiteList"}>
+      <div
+        className={`SiteList ${this.props.blur ? "blur" : ""} ${
+          this.props.loading ? "loading" : ""
+        }`}
+      >
         {this.props.sites.map(site => (
           <ListItem
             key={site.uid}

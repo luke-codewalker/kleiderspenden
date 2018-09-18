@@ -16,6 +16,7 @@ class App extends Component {
     this.state = {
       visitedBefore: false,
       introStep: 0,
+      loading: false,
       search: {
         trigger: PLACE,
         place: "Innenstadt",
@@ -80,6 +81,7 @@ class App extends Component {
   }
 
   getSites() {
+    this.setState({ loading: true });
     const { place, categories, trigger, coords, radius } = this.state.search;
 
     const query = [];
@@ -100,7 +102,7 @@ class App extends Component {
 
     fetch(url)
       .then(res => res.json())
-      .then(data => this.setState({ sites: data }))
+      .then(data => this.setState({ sites: data, loading: false }))
       .catch(err => console.log(err));
   }
 
@@ -193,6 +195,7 @@ class App extends Component {
           />
           <SiteList
             sites={this.state.sites}
+            loading={this.state.loading}
             clickHandler={this.handleListClick.bind(this)}
             focusElement={this.state.currentlySelectedId}
             blur={
