@@ -15,6 +15,7 @@ Open Source Data used by this app provided by [AWB Koeln](https://www.awbkoeln.d
 - [x] dynamically load api url depending on dev vs prod env
 - [x] add favicon
 - [ ] add en and de language support
+- [ ] let radius search be activated by button on map
 - [ ] add about page with link to this repo
 - [x] add message when result list empty
 - [x] add footer with link to github profile
