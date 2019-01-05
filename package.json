@@ -11,7 +11,7 @@
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
     "react-leaflet": "^2.1.4",
-    "react-scripts": "^2.1.2"
+    "react-scripts": "^2.1.3"
   },
   "homepage": "https://luke-codewalker.github.io/kleiderspenden",
   "scripts": {
