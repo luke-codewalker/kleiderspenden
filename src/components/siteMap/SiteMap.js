@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Map, TileLayer, Marker, Popup, Tooltip, Circle } from "react-leaflet";
+import Control from "react-leaflet-control";
 import CustomMarker from "../customMarker/CustomMarker";
 import "./siteMap.css";
 import { MAP } from "../../globals";
@@ -32,15 +33,10 @@ class SiteMap extends Component {
         title="Auf Karte klicken, um im Umkreis zu suchen"
         className={this.props.blur ? "SiteMap blur" : "SiteMap"}
       >
-        <Map
-          center={center}
-          zoom={13}
-          onClick={this.props.mapClickHandler}
-          doubleClickZoom={false}
-        >
+        <Map center={center} zoom={13} onClick={this.props.mapClickHandler}>
           {" "}
           <TileLayer
-            attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+            attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {this.props.sites.map(site => {
@@ -96,6 +92,9 @@ class SiteMap extends Component {
               />
             </Marker>
           ) : null}
+          <Control position="bottomleft">
+            <button onClick={this.props.handleRadiusSwitchClick}>Radius</button>
+          </Control>
         </Map>
       </div>
     );

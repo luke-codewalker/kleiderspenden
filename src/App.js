@@ -17,6 +17,7 @@ class App extends Component {
       visitedBefore: false,
       introStep: 0,
       loading: false,
+      waitingForMapClick: false,
       search: {
         trigger: PLACE,
         place: "Innenstadt",
@@ -107,7 +108,12 @@ class App extends Component {
   }
 
   handleMapClick(e) {
-    this.updateSearch({ coords: e.latlng, place: "", trigger: MAP });
+    if (this.state.waitingForMapClick) {
+      this.updateSearch({ coords: e.latlng, place: "", trigger: MAP });
+      this.setState({
+        waitingForMapClick: false
+      });
+    }
   }
 
   handleMarkerClick(e, id) {
@@ -153,6 +159,12 @@ class App extends Component {
     }
   }
 
+  handleRadiusSwitchClick() {
+    this.setState(prevState => ({
+      waitingForMapClick: !prevState.waitingForMapClick
+    }));
+  }
+
   render() {
     return (
       <div className="App">
@@ -190,6 +202,7 @@ class App extends Component {
             markerClickHandler={this.handleMarkerClick.bind(this)}
             handlePopupClose={this.handlePopupClose.bind(this)}
             handleChange={this.updateSearch.bind(this)}
+            handleRadiusSwitchClick={this.handleRadiusSwitchClick.bind(this)}
             focusElement={this.state.currentlySelectedId}
             blur={!this.state.visitedBefore && this.state.introStep < 3}
           />
