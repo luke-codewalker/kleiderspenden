@@ -13,6 +13,7 @@ Open Source Data used by this app provided by [AWB Koeln](https://www.awbkoeln.d
 
 - [ ] refactor to avoid prop drilling (Context API?)
 - [ ] refactor to avoid bloated master App component
+- [ ] make app responsive
 - [x] get app up and running
 - [x] dynamically load api url depending on dev vs prod env
 - [x] add favicon
@@ -21,7 +22,6 @@ Open Source Data used by this app provided by [AWB Koeln](https://www.awbkoeln.d
 - [ ] add about page with link to this repo
 - [x] add message when result list empty
 - [x] add footer with link to github profile
-- [ ] create mobile layout
 - [ ] add option to send add/update/edit suggestions
 - [x] add loading spinner to result list
 - [x] add circle showing radius to map
