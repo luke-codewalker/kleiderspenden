@@ -11,6 +11,8 @@ Open Source Data used by this app provided by [AWB Koeln](https://www.awbkoeln.d
 
 ## To Do list
 
+- [ ] refactor to avoid prop drilling (Context API?)
+- [ ] refactor to avoid bloated master App component
 - [x] get app up and running
 - [x] dynamically load api url depending on dev vs prod env
 - [x] add favicon
